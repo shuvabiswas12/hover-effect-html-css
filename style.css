@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;    
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s, color 0.5s;
+    -webkit-transition: background-position 0.5s, color 0.5s;
+    -moz-transition: background-position 0.5s, color 0.5s;
+    -ms-transition: background-position 0.5s, color 0.5s;
+    -o-transition: background-position 0.5s, color 0.5s;
+}
+
+
+.item:nth-child(1) {
+    background-image: linear-gradient(white 50%, #1976d3 50%);
+}
+.item:nth-child(2) {
+    background-image: linear-gradient(white 50%, #f44236 50%);
+}
+.item:nth-child(3) {
+    background-image: linear-gradient(white 50%, #03a9f5 50%);
+}
+
+.item:hover {
+    background-position: 0 100%;
+}
+
+.item:hover .fa-facebook, .item:hover .fa-youtube, .item:hover .fa-twitter {
+    color: white;
+}
+
+
+.fa-facebook, .fa-youtube, .fa-twitter {
+    font-size: 2.5rem;
+}
+
+.fa-facebook {
+    color: #1976d3;
+}
+
+.fa-youtube {
+    color: #f44236;
+}
+
+.fa-twitter {
+    color: #03a9f5;
+}
+
